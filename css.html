@@ -21,12 +21,12 @@ input:checked + label{
   color: green;
 }
 
-
 .container{
   background-image:url(http://ppt.cc/BiUR@.jpg);
   padding:40px;
-  
-  margin:auto;
+  border:5px #008080 solid;
+  border-radius:8px;
+  margin:10px;
 }
 
 
@@ -35,7 +35,7 @@ input:checked + label{
 
 @Media (max-width: 750px){
 img{
-  width:25%;
+  width:30%;
   padding:1em;
   background-color:#669999;
   box-sizing:border-box;
@@ -48,7 +48,9 @@ h1{
   font-size:40px;
 } 
   
-  #container {width: auto; max-width: 750px;}
+  #container {width: auto; 
+    max-width: 750px;
+  }
   #main, #sidebar,#one,#question{width: 100%; float: none;}
 
 
@@ -68,7 +70,10 @@ h1{
 h1{
   font-size:30px;
 }
-    #container {width: auto; max-width: 768px;}
+    #container {
+    width: auto; 
+    max-width: 768px;
+  }
   #main, #sidebar,#one,#question{width: 100%; float: none;}
   
 }
@@ -78,7 +83,7 @@ h1{
 }
 @Media (min-width: 768px) and (max-width: 970px) {
  img{
-  width:30%;
+  width:25%;
   padding:1em;
   background-color:#669999;
   box-sizing:border-box;
@@ -91,7 +96,8 @@ h1{
   font-size:30px;
 }
   
-  #container {width: auto; max-width: 970px;}
+  #container {width: auto; max-width: 970px;
+ }
   #main,#question {width: 60%; float: left;}
   #sidebar,#one {width: 40%; float: left; margin-bottom: 10px;}
   
