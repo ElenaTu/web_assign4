@@ -21,12 +21,19 @@ input:checked + label{
   color: green;
 }
 
-
+.container{
+  background-image:url(http://ppt.cc/BiUR@.jpg);
+    padding:40px;
+    border:5px #008080 solid;
+    border-radius:8px;
+    margin:10px;
+  
+}
 
 
 @Media (max-width: 750px){
 img{
-  width:30%;
+  width:60%;
   padding:1em;
   background-color:#669999;
   box-sizing:border-box;
@@ -41,11 +48,7 @@ h1{
   
   .container {width: auto; 
     max-width: 750px;
-      background-image:url(http://ppt.cc/BiUR@.jpg);
-  padding:40px;
-  border:5px #008080 solid;
-  border-radius:8px;
-  margin:10px;
+     
   }
   #main, #sidebar,#one,#question{width: 100%; float: none;}
 
@@ -54,7 +57,7 @@ h1{
   
 @Media (min-width: 750px)and (max-width: 768px){
  img{
-  width:25%;
+  width:40%;
   padding:1em;
   background-color:#669999;
   box-sizing:border-box;
@@ -69,11 +72,7 @@ h1{
     .container {
     width: auto; 
     max-width: 768px;
-    background-image:url(http://ppt.cc/BiUR@.jpg);
-  padding:40px;
-  border:5px #008080 solid;
-  border-radius:8px;
-  margin:10px;
+
   }
   #main, #sidebar,#one,#question{width: 100%; float: none;}
   
@@ -84,7 +83,7 @@ h1{
 }
 @Media (min-width: 768px) and (max-width: 970px) {
  img{
-  width:25%;
+  width:10%;
   padding:1em;
   background-color:#669999;
   box-sizing:border-box;
@@ -100,11 +99,7 @@ h1{
   .container {
     width: auto; 
     max-width: 970px;
-    background-image:url(http://ppt.cc/BiUR@.jpg);
-    padding:40px;
-    border:5px #008080 solid;
-    border-radius:8px;
-    margin:10px;
+    
  }
   #main,#question {width: 60%; float: left;}
   #sidebar,#one {width: 40%; float: left; margin-bottom: 10px;}
