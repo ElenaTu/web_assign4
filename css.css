@@ -1,112 +1,183 @@
+<html>
+  <html lang="en">
 
-.underline{
-  text-decoration:underline;
-}
+<head>
 
-#sidebar{
-  display:inline-block;
-  position:absulute; 
-  font-size:15px;
-  padding:1em 1em 5em 1em;
-  line-height:20px;
-}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-#main{
-  display:inline-block;
-  font-size:15px;
-  line-height:20px;
-}
+    <title>ReMoodle</title>
 
-input:checked + label{
-  color: green;
-}
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-.container{
-  background-image:url(http://ppt.cc/BiUR@.jpg);
-    padding:40px;
-    border:5px #008080 solid;
-    border-radius:8px;
-    margin:10px;
-  
-}
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
+</head>
 
-@Media (max-width: 750px){
-img{
-  width:60%;
-  padding:1em;
-  background-color:#669999;
-  box-sizing:border-box;
-}
- h2{
-  font-size:30px;
-}
-
-h1{
-  font-size:40px;
-} 
-  
-  .container {width: auto; 
-    max-width: 750px;
-     
-  }
-  #main, #sidebar,#one,#question{width: 100%; float: none;}
-
-
-}
-  
-@Media (min-width: 750px)and (max-width: 768px){
- img{
-  width:40%;
-  padding:1em;
-  background-color:#669999;
-  box-sizing:border-box;
-}
-  h2{
-  font-size:20px;
-}
-
-h1{
-  font-size:30px;
-}
-    .container {
-    width: auto; 
-    max-width: 768px;
-
-  }
-  #main, #sidebar,#one,#question{width: 100%; float: none;}
-  
-}
-
- 
-
-}
-@Media (min-width: 768px) and (max-width: 970px) {
- img{
-  width:10%;
-  padding:1em;
-  background-color:#669999;
-  box-sizing:border-box;
-}
-  h2{
-  font-size:20px;
-}
-
-h1{
-  font-size:30px;
-}
-  
-  .container {
-    width: auto; 
-    max-width: 970px;
+<body>
     
- }
-  #main,#question {width: 60%; float: left;}
-  #sidebar,#one {width: 40%; float: left; margin-bottom: 10px;}
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        ReMoodle
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Personal</a>
+                </li>
+                <li>
+                    <a href="#">Course</a>
+                </li>
+                <li>
+                    <a href="#">Forums</a>
+                </li>
+                <li>
+                    <a href="#" id="prev">Previous<span class="caret"></span></a>
+                    <div id="previous">
+                    <ul class="subSide">
+                    <li><a href="#">class1</a></li>
+                    <li><a href="#">class2</a></li>
+                    <li><a href="#">class3</a></li>
+                    </ul>
+                    </div>
+                </li>
+               
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!--/#navbar-->
+        <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
+                      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-book"> ReMoodle</span></a>
+                    </div> 
+                    <div>
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </nav>
+        <!--/#navbar-->
+        
+        <!-- Page Content -->
+      <div id="page-content-wrapper">
+                
+            <div class="container-fluid">
+             
+
+                <div class="banner">
+
+                </div>
+
+                <div class="jumbotron">
+                    <h3>The teacher said........</h3>      
+                    <p>Saying something to yourself</p>      
+                </div>        
+                
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1></h1>
+                        <p></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="container">
+               <nav class="row">
+   
+      <ul class="nav nav-tabs" id="myTab">
+         <li class="active"><a data-toggle="tab" href="#mypage">My Page</a></li>
+         <li><a data-toggle="tab" href="#homework">Homework</a></li>
+      </ul>
+    
+  </nav>
+              <div class="tab-content">
+
+  <div class="tab-pane fade in active" id="mypage">
+
+    <div class="row" id="page">
+      <button type="button" class="btn btn-primary"><i class="fa fa-tags"></i>Course1</button><br><br>
+     <button type="button" class="btn btn-primary"><i class="fa fa-tags"></i>Course2</button><br><br>
+      <button type="button" class="btn btn-primary"><i class="fa fa-tags"></i>Course3</button>
+     
+  
+    </div>
+    
+            
+    </div>
+
+  <div class="tab-pane" id="homework">
+    <div class="form-group">
+    <label for="exampleInputFile"><i class="fa fa-file"></i>HW1</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block"></p>
+  </div>
+    <div class="form-group">
+    <label for="exampleInputFile"><i class="fa fa-file"></i>HW2</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block"></p>
+  </div>
+    <div class="form-group">
+    <label for="exampleInputFile"><i class="fa fa-file"></i>HW3</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block"></p>
+  </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+      
+  </div>
+  </div>
+  </section>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    
+
+</body>
   
   
-}
+    <script src="js/jquery.js"></script>
 
-
-
-
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#prev").click(function(e){
+        e.preventDefault();
+        $("#previous").toggle("fast");
+    });
+    </script>
+  </body>
+  </html>
