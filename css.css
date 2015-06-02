@@ -119,6 +119,7 @@
 
   <div class="tab-pane fade in active" id="mypage">
 
+    <p>
     <div class="row" id="page">
       <button type="button" class="btn btn-primary"><i class="fa fa-tags"></i>Course1</button><br><br>
      <button type="button" class="btn btn-primary"><i class="fa fa-tags"></i>Course2</button><br><br>
@@ -126,10 +127,10 @@
      
   
     </div>
-    
+    </p>
             
     </div>
-
+<p>
   <div class="tab-pane" id="homework">
     <div class="form-group">
     <label for="exampleInputFile"><i class="fa fa-file"></i>HW1</label>
@@ -147,7 +148,8 @@
     <p class="help-block"></p>
   </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-      
+   </p>
+    
   </div>
   </div>
   </section>
